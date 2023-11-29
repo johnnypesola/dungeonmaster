@@ -4,9 +4,11 @@ This is a simple node.js backend that serves a simple api for getting and adding
 
 ## Getting it up and running locally
 
-1. run `docker-compose up -d`
-2. run `npm start`
-3. initialize the database with basic room data by doing a GET request to `http://localhost:3000/api/init`
+Prerequisites: You need to have `docker` and `node.js` installed locally.
+
+1. Open up a terminal, make sure you are in this folder and run `docker-compose up -d`
+2. Run `npm start`
+3. Initialize the database with basic room data by doing a GET request to `http://localhost:3000/api/init`
 4. Check that it works by doing a GET request to `http://localhost:3000/api/room/0`
 
 ## Get a room
