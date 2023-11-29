@@ -1,0 +1,19 @@
+[
+  {
+    "N": 1,
+    "room_number": 0,
+    "description": "You stand before a mighty castle. The is a big door in front of you. You are eager to enter to se what riches and adventures you can find inside. The wind blows. It is cold."
+  },
+  {
+    "N": 2,
+    "room_number": 1,
+    "description": "You enter a hallway and a long corridor lies ahead. You sence a smell of burnt wood and small gusts or warm air comes from the other end of the long corridor, but you are too far away to see what lies ahead."
+  },
+  {
+    "N": 3,
+    "S": 1,
+    "E": 4,
+    "room_number": 2,
+    "description": "You find yourself standing in a room with a sparkling fireplace in front of you. The warm red glow project to the walls causing truly fascinating lively shapes. For a second you make out our long lost daughters legs in on of them. She must be in this castle! You convice yourself, eager to move on in your quest."
+  }
+]
