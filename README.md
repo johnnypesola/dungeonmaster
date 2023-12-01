@@ -2,6 +2,8 @@
 
 This is a simple node.js backend that serves a simple api for getting and adding rooms.
 
+If you are new to frontend web development, check out [this document](docs/futher-reading.md) for more valuable information.
+
 ## Getting it up and running locally
 
 Prerequisites: You need to have `docker` and `node.js` installed locally.
@@ -36,5 +38,4 @@ Make a DELETE request to `http://localhost:3000/api/room/0` where 0 is `room_num
 
 ## Data schema
 
-See
-[models/model.js](models/model.js).
+See [models/model.js](models/model.js).
