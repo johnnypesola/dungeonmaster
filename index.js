@@ -25,5 +25,8 @@ app.listen(3000, () => {
 
 const routes = require('./routes/routes');
 
+// Use routes
 app.use('/api', routes)
 
+// Server static folder containing uploaded room images
+app.use('/api/room-img', express.static('uploads'))
