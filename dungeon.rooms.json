@@ -1,19 +1,35 @@
 [
   {
-    "N": 1,
+    "N": { "to_room": 1 },
     "room_number": 0,
     "description": "You stand before a mighty castle. The is a big door in front of you. You are eager to enter to se what riches and adventures you can find inside. The wind blows. It is cold."
   },
   {
-    "N": 2,
+    "N": { "to_room": 2 },
     "room_number": 1,
     "description": "You enter a hallway and a long corridor lies ahead. You sence a smell of burnt wood and small gusts or warm air comes from the other end of the long corridor, but you are too far away to see what lies ahead."
   },
   {
-    "N": 3,
-    "S": 1,
-    "E": 4,
+    "N": { "to_room": 3 },
+    "S": { "to_room": 1 },
+    "E": { "to_room": 4 },
     "room_number": 2,
-    "description": "You find yourself standing in a room with a sparkling fireplace in front of you. The warm red glow project to the walls causing truly fascinating lively shapes. For a second you make out our long lost daughters legs in on of them. She must be in this castle! You convice yourself, eager to move on in your quest."
+    "description": "You find yourself standing in a room with a sparkling fireplace in front of you. The warm red glow project to the walls causing truly fascinating lively shapes. For a second you make out your long lost daughters in one of them. She must be in this castle, you convince yourself, eager to move on in your quest."
+  },
+  {
+    "S": { "to_room": 2 },
+    "N": { "to_room": 5, "magic_word": "abrakadabra" },
+    "room_number": 3,
+    "description": "As you enter the room you are struck by the immense heat from the flames in the room. A big mighty dragon appears in the center next to her nest, which by the look of it appears to be missing something."
+  },
+  {
+    "W": { "to_room": 2 },
+    "room_number": 4,
+    "description": "You enter the room you freeze for a moment by the apperance of a wizard just standing there. 'Yess...' he mumbles for himself whilst examining you thoroughly. A giant egg stands on a pedistal next to him."
+  },
+  {
+    "S": { "to_room": 3 },
+    "room_number": 5,
+    "description": "You enter enter a room that looks more like a garden. You find your daughter. You immediately run to her and hug her. The end."
   }
 ]

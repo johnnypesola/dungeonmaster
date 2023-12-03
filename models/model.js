@@ -1,5 +1,16 @@
 const mongoose = require('mongoose');
 
+const doorSchema = new mongoose.Schema({
+  to_room: {
+    required: true,
+    type: Number
+  },
+  magic_word: {
+    required: false,
+    type: String
+  }
+});
+
 const dataSchema = new mongoose.Schema({
     description: {
         required: true,
@@ -9,22 +20,10 @@ const dataSchema = new mongoose.Schema({
         required: true,
         type: Number
     },
-    N: {
-      required: false,
-      type: Number
-    },
-    S: {
-      required: false,
-      type: Number
-    },
-    E: {
-      required: false,
-      type: Number
-    },
-    W: {
-      required: false,
-      type: Number
-    }
+    N: doorSchema,
+    S: doorSchema,
+    E: doorSchema,
+    W: doorSchema
 })
 
 module.exports = mongoose.model('rooms', dataSchema)
