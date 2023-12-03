@@ -25,16 +25,21 @@ Make a POST request to `http://localhost:3000/api/room` with some data:
 {
   "room_number": 123,
   "description": "A very nice room",
-  "N": 0,
-  "E": 1,
-  "W": 2,
-  "S": 3
+  "N": { "to_room": 0 },
+  "E": { "to_room": 1 },
+  "W": { "to_room": 2 },
+  "S": { "to_room": 3 }
 }
 ```
 
 ## Deleteing existing rooms
 
 Make a DELETE request to `http://localhost:3000/api/room/0` where 0 is `room_number`
+
+## Posting images to rooms
+
+Make a POST request to `http://localhost:3000/api/room/0/img` with `multi-part form data` containing a input type file field with a the attribute name="img":
+`<input name="img" type="file" />`
 
 ## Data schema
 
