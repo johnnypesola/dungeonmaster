@@ -1,4 +1,4 @@
-# Some mongodb backend
+# dungeon master backend
 
 This is a simple node.js backend that serves a simple api for getting and adding rooms.
 
