@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>doungeon-master frontend</title>
+  <head>
+    <title>dungeon-master frontend</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-        
-        <header>        <h1>Welcome to Dungeon Master</h1>
-            <h4>    <i>are you ready for the adventure</i></h4></header>
-    <section >
-                <div class="room-info">   <p>"You stand before a mighty castle. The is a big door in front of you. You are eager to enter to se what riches and adventures you can find inside. The wind blows. It is cold."</p>   </div>
-  
-            <div class="navigation">
-                <div class="navigation-N"><button class="arrow-N">⬆️</button>     <p class="N">N</p> </div>
-                <div class="navigation-E"><button class="arrow-E">➡️</button>    <p class="E">E</p> </div>
-                <div class="navigation-S"><button class="arrow-S">⬇️</button>     <p class="S">S</p></div>
-                <div class="navigation"><button class="arrow-W">⬅️</button> <p class="W">W</p> </div>
-            </div>
-        </section>
-        <script src="client.js"></script>
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Dungeon Master</h1>
+      <h4><i>are you ready for the adventure</i></h4>
+    </header>
+    <section>
+      <div>
+        <p class="room-info"></p>
+      </div>
 
+      <div class="navigation">
+        <div class="navigation-N">
+          <button disabled class="arrow-N">⬆️</button>
+          <p class="N">N</p>
+        </div>
+        <div class="navigation-E">
+          <button disabled class="arrow-E">➡️</button>
+          <p class="E">E</p>
+        </div>
+        <div class="navigation-S">
+          <button disabled class="arrow-S">⬇️</button>
+          <p class="S">S</p>
+        </div>
+        <div class="navigation">
+          <button disabled class="arrow-W">⬅️</button>
+          <p class="W">W</p>
+        </div>
+      </div>
+    </section>
+    <script src="client.js"></script>
+  </body>
 </html>
