@@ -25,6 +25,10 @@ section{
     top:80px;
     left:20px
 }
+img{
+    width:300px;
+    
+}
 .room-info{
    
   text-align: center;

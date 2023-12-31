@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>dungeon-master frontend</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to Dungeon Master</h1>
-      <h4><i>are you ready for the adventure</i></h4>
-    </header>
-    <section>
-      <div>
-        <p class="room-info"></p>
-      </div>
 
-      <div class="navigation">
-        <div class="navigation-N">
-          <button disabled class="arrow-N">⬆️</button>
-          <p class="N">N</p>
-        </div>
-        <div class="navigation-E">
-          <button disabled class="arrow-E">➡️</button>
-          <p class="E">E</p>
-        </div>
-        <div class="navigation-S">
-          <button disabled class="arrow-S">⬇️</button>
-          <p class="S">S</p>
-        </div>
-        <div class="navigation">
-          <button disabled class="arrow-W">⬅️</button>
-          <p class="W">W</p>
-        </div>
+<head>
+  <title>dungeon-master frontend</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Dungeon Master</h1>
+    <h4><i>are you ready for the adventure</i></h4>
+  </header>
+  <section>
+    <div>
+      <p class="room-info"></p>
+    </div>
+
+    <div class="navigation">
+      <div class="navigation-N">
+        <button disabled class="arrow-N">⬆️</button>
+        <p class="N">N</p>
       </div>
-    </section>
-    <script src="client.js"></script>
-  </body>
+      <div class="navigation-E">
+        <button disabled class="arrow-E">➡️</button>
+        <p class="E">E</p>
+      </div>
+      <div class="navigation-S">
+        <button disabled class="arrow-S">⬇️</button>
+        <p class="S">S</p>
+      </div>
+      <div class="navigation">
+        <button disabled class="arrow-W">⬅️</button>
+        <p class="W">W</p>
+      </div>
+    </div>
+    <div>
+      <img class="roomimage" />
+    </div>
+  </section>
+  <script src="client.js"></script>
+</body>
+
 </html>
