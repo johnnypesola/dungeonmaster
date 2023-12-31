@@ -21,8 +21,8 @@ router.get("/init", async (req, res) => {
   const count = await Model.countDocuments({ room_number: 0 });
 
   if (count) {
-    res.status(500).json({ message: "database is already initialized" });
-    return;
+    console.log("database already contains data, removing all old data before initialization")
+    await Model.collection.deleteMany({})
   }
   const data = require("../dungeon.rooms.json");
   await Model.collection.insertMany(data);
