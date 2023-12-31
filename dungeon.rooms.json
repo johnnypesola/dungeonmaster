@@ -18,18 +18,26 @@
   },
   {
     "S": { "to_room": 2 },
-    "N": { "to_room": 5, "magic_word": "abrakadabra" },
     "room_number": 3,
-    "description": "As you enter the room you are struck by the immense heat from the flames in the room. A big mighty dragon appears in the center next to her nest, which by the look of it appears to be missing something."
+    "description": "As you enter the room you are struck by the immense heat from the flames in the room. A big mighty dragon appears in the center. 'Hey you!' the dragon mumbles to your surprise. 'What is the magic word?'",
+    "events": {
+      "magic_word": "abracadabra",
+      "to_room": 6
+    }
   },
   {
     "W": { "to_room": 2 },
     "room_number": 4,
-    "description": "You enter the room you freeze for a moment by the apperance of a wizard just standing there. 'Yess...' he mumbles for himself whilst examining you thoroughly. A giant egg stands on a pedistal next to him."
+    "description": "You enter the room you freeze for a moment by the apperance of a wizard just standing there. 'Yess...' he mumbles for himself whilst examining you thoroughly. Do you wish to learn some magic young adventurer? This spell, 'abracadabra' might serve you well."
   },
   {
     "S": { "to_room": 3 },
     "room_number": 5,
     "description": "You enter enter a room that looks more like a garden. You find your daughter. You immediately run to her and hug her. The end."
+  },
+  {
+    "N": { "to_room": 5 },
+    "room_number": 6,
+    "description": "As you say the magic word the dragon gives a slight nod and flies away and a door reweals itself behind where the dragon once stood."
   }
 ]
