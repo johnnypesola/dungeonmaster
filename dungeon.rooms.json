@@ -19,16 +19,17 @@
   {
     "S": { "to_room": 2 },
     "room_number": 3,
-    "description": "As you enter the room you are struck by the immense heat from the flames in the room. A big mighty dragon appears in the center. 'Hey you!' the dragon mumbles to your surprise. 'What is the magic word?'",
+    "description": "As you enter the room you are struck by the immense heat from the flames in the room. A big mighty dragon appears in the center. It's nest appears to be missing something.",
     "events": {
-      "magic_word": "abracadabra",
+      "requires_item": "dragon-egg",
       "to_room": 6
     }
   },
   {
     "W": { "to_room": 2 },
     "room_number": 4,
-    "description": "You enter the room you freeze for a moment by the apperance of a wizard just standing there. 'Yess...' he mumbles for himself whilst examining you thoroughly. Do you wish to learn some magic young adventurer? This spell, 'abracadabra' might serve you well."
+    "description": "You enter the room you freeze for a moment by the apperance of a wizard just standing there. 'Yess...' he mumbles for himself whilst examining you thoroughly. The wizard seems to be an dragon egg collector. When he looks away for a brief moment, you cannot help yourself and slip a shiny dragon egg down into your bag.",
+    "items": ["dragon-egg"]
   },
   {
     "S": { "to_room": 3 },
@@ -38,6 +39,6 @@
   {
     "N": { "to_room": 5 },
     "room_number": 6,
-    "description": "As you say the magic word the dragon gives a slight nod and flies away and a door reweals itself behind where the dragon once stood."
+    "description": "As you enter the room, the dragon gives a slight nod as you hand the dragon egg to it. The dragon flies away and a door reweals itself behind where the dragon once stood."
   }
 ]
