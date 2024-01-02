@@ -1,102 +1,125 @@
+@media (max-width: 500px) and (min-width: 100px){
+    div.navigation{
+        width:100%;
+    }
+}
+body {
+    background-color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: auto
+}
 
-body{
-    background-color:gray;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width:auto 
-}
-header{
+header {
     background-color: grey;
-    width:100%;
-    padding:10px
+    width: 100%;
+    padding: 10px
 }
-h1{
+
+h1 {
     text-align: center;
 }
-h4{
-    text-align:center;
+
+h4 {
+    text-align: center;
 }
-section{
-   
-   display: flex;
-   justify-content: center;
+
+section {
+
+    display: flex;
+
+    flex-direction: column;
     position: relative;
-    top:50px;
-    left:-120px;
-   width:1000px;
-   
-}
-img{
-  
-   position:absolute;
-   top:200px ;
-   right:200px;
-    width:400px;
-    height:400px;
-   
-}
-.room-info{
-   
-  text-align: center;
-    width: 300px;
-    height:150px;
+    top: 0px;
     align-items: center;
-    padding-top: 150px;
+    width: 100%;
+    /*border: solid pink 3px;*/
+
 
 }
-.room-info, p{
+
+img {
+
+    width: 100%;
+    z-index: 0;
+
+
+
+
+
+
+}
+
+.room-info {
+
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    /*border: solid purple 2px;*/
+
+
+
+
+}
+
+.room-info,
+p {
     font-size: medium;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-button{
+.navigation {
+
+    width:40%;
+    position: relative;
+    font-weight: bolder;
+    /*border: blue solid 3px;*/
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    justify-content: center;
+
+
+}
+
+button {
     cursor: pointer;
-}
-.arrow-N{
-    position: relative;
-left:-160px;
-top:40px;
-font-size: xx-large;
-}
-.N{
-    position:relative;
-    left:-150px;
-    top:-80px;
     font-size: xx-large;
-}
-.arrow-S{
-    position: relative;
-left:-160px;
-top:20px;
-font-size: xx-large;
 }
 
-.S{
-    position:relative;
-    left:-145px;
-    top:-px;
-    font-size: xx-large; 
+.button-container {
+   /* border: solid black 1px;*/
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 35px;
+
+
+
 }
-.arrow-E{
-    position: relative;
-    left:80px;
-    top:30px;
-    font-size: xx-large;
-    }  
-.E{
-    position: relative;
-left:140px;
-top:-40px;
-font-size: xx-large;
+
+.navigation-N {
+    flex-direction: column;
+    top: 0px;
+    left: calc(50% - 50px);
 }
-.arrow-W{
-    position: relative;
-    left:-430px;
-    top:-270px;
-    font-size: xx-large;
+
+.navigation-S {
+    flex-direction: column;
+    bottom: 0px;
+    left: calc(50% - 50px);
 }
-.W{
-    position: relative;
-    left:-480px;
-    top:-340px;
-    font-size: xx-large;
+
+.navigation-E {
+    right: 0px;
+    top: calc(50% - 50px);
+}
+
+.navigation-W {
+    left: 0px;
+    top: calc(50% - 50px);
 }
