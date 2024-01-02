@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>dungeon-master frontend</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <title>dungeon-master frontend</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <header>
+      <h1>Welcome to Dungeon Master</h1>
+      <h4><i>are you ready for the adventure</i></h4>
+    </header>
 
-<body>
-  <header>
-    <h1>Welcome to Dungeon Master</h1>
-    <h4><i>are you ready for the adventure</i></h4>
-  </header>
- 
-  <section>
-    
-   
-
-    <div class="navigation">
-      <img class="roomimage" />
-      <div class="navigation-N button-container">
-        <button disabled>⬆️</button>
+    <section>
+      <div class="navigation">
+        <img class="roomimage" />
+        <div class="navigation-N button-container">
+          <button disabled>⬆️</button>
           <span>N</span>
-      </div>
-      <div class="navigation-E button-container">
-        <span>E</span>
-        <button disabled >➡️</button>
-        
-      </div>
-      <div class="navigation-S button-container">
-        <span>S</span>
-        <button disabled>⬇️</button>
-        
-      </div>
-      <div class="navigation-W button-container">
-        <button disabled>⬅️</button>
+        </div>
+        <div class="navigation-E button-container">
+          <span>E</span>
+          <button disabled>➡️</button>
+        </div>
+        <div class="navigation-S button-container">
+          <span>S</span>
+          <button disabled>⬇️</button>
+        </div>
+        <div class="navigation-W button-container">
+          <button disabled>⬅️</button>
           <span>W</span>
+        </div>
       </div>
-    </div>
-  
-    <div>
-      <p class="room-info"></p>
-    </div>
-  </section>
 
-  <script src="client.js"></script>
-</body>
+      <div>
+        <p class="room-info"></p>
+      </div>
+    </section>
 
+    <script src="client.js"></script>
+  </body>
 </html>
