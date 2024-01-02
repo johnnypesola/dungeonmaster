@@ -12,10 +12,10 @@ const setImage = (roomNum) => {
   sourceImg.src = "http://localhost:3000/api/room-img/" + roomNum + ".jpg";
 };
 const updateHtmlWithRoomData = (room) => {
-  const arrowN = document.querySelector(".arrow-N");
-  const arrowE = document.querySelector(".arrow-E");
-  const arrowS = document.querySelector(".arrow-S");
-  const arrowW = document.querySelector(".arrow-W");
+  const arrowN = document.querySelector(".navigation-N button");
+  const arrowE = document.querySelector(".navigation-E button");
+  const arrowS = document.querySelector(".navigation-S button");
+  const arrowW = document.querySelector(".navigation-W button");
   setDescription(room.description);
   setImage(room.room_number);
 
